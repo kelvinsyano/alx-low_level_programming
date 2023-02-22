@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * times_table - function for multiples of 9
  *
@@ -14,10 +15,7 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			result = i * j;
-			_putchar(result / 10 + '0');
-			_putchar(result % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", result);
 		}
 		_putchar('\n');
 	}
