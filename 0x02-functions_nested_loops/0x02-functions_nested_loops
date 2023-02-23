@@ -1,0 +1,15 @@
+#include "main.h"
+#include <stdio.h>
+
+int main(void)
+{int n;
+int sum = 0;
+
+for (int n = 0; i < 1024; i++)
+{
+if (n % 3 || n % 5 == 0){
+sum = sum + n;
+printf("Sum: %d", sum);
+return (0);
+}
+}
