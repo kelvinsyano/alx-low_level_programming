@@ -8,20 +8,26 @@
 
 char *leet(char *str)
 {
-	char *replace = "aAeEoOtTiL";
-	char *with = "44337071";
-	int i, j;
+	char *p = st;
+	char leet[10][2] = {{'a' , '4'}, {'e', '3'}, {'o', '0'}, {'t', '7'}, {'l', '1'}, {'A', '4'}, {'E', '3'}, {'O', '0'}, {'T', '7'}, {'L', '1'}};
 
-	for (i = 0; str[i] != '\0'; i++)
+
+
+	while (*p)
 	{
-		for (j = 0; replace[j] != '\0'; j++)
+		int i = 0;
+
+
+		while (i < 10)
 		{
-			if (str[i] == replace[j])
+			if (*p == leet[i][0])
 			{
-				str[i] = with[j];
+				*p = leet[i][1];
 				break;
 			}
+			i++;
 		}
+		p++;
 	}
 	return (str);
 }
