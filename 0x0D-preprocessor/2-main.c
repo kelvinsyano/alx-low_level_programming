@@ -8,6 +8,6 @@
 
 int  main(void)
 {
-	printf("file: %s\n", _FILE_);
+	printf("file: %s\n", __FILE__);
 	return (0);
 }
