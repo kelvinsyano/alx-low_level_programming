@@ -3,7 +3,7 @@ extern printf
 
 section .data
     hello db 'Hello, Holberton', 0
-    fmt db '%s\n', 0
+    fmt db '%s', 10, 0
 
 section .text
 main:
